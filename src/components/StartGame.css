@@ -1,0 +1,33 @@
+.dice-img{
+    height: 350px;
+    width: 550px;
+    border-radius: 15px;
+}
+
+.homepage-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:600px) and (max-width:1200px){
+    .homepage-style{
+        flex-direction: column;
+        height: 90vh;
+    }
+    .dice-img{
+        height: 250px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .homepage-style{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .dice-img{
+        height: 150px;
+        width: 250px;
+    }
+}

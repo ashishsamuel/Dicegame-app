@@ -1,0 +1,38 @@
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.button-style{
+    border: 1px solid black !important;
+    width: 18%;
+    border-radius: 15px;
+}
+
+.game-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem;
+}
+
+@media screen and (min-width:600px) and (max-width:1200px){
+    .button-style{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .button-style{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .game-section{
+        height: 70vh;
+        flex-direction: column;
+        justify-content: none;
+        margin: 1rem;
+    }
+}
